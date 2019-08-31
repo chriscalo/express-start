@@ -1,6 +1,6 @@
 {
   "name": "@chriscalo/start-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple utility for starting an express server with automatic port selection.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
