@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Simple utility for starting an express server with automatic port selection.",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "index.js",
   "source": "index.js",
   "repository": "https://github.com/chriscalo/start-server.git",
   "author": "Chris Calo <chris.calo@gmail.com>",
@@ -11,8 +11,8 @@
   "scripts": {
     "test": "ava",
     "test:watch": "ava --watch",
-    "build": "microbundle --target=node --format=es,cjs",
-    "build:watch": "microbundle watch --target=node --format=es,cjs"
+    "build": "microbundle --target=node --format=cjs",
+    "build:watch": "microbundle watch --target=node --format=cjs"
   },
   "dependencies": {
     "portfinder": "^1.0.23"
