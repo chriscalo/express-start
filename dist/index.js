@@ -19,9 +19,12 @@ var start = function (server, startPort) {
 
   try {
     function _temp(PORT) {
-      server.listen(PORT, function () {
-        console.log(("App listening on port " + PORT));
-        console.log("Press Ctrl+C to quit.");
+      return new Promise(function (resolve) {
+        var listener = server.listen(PORT, function () {
+          console.log(("App listening on port " + PORT));
+          console.log("Press Ctrl+C to quit.");
+          resolve(listener);
+        });
       });
     }
 
