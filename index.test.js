@@ -13,9 +13,15 @@ test("starts server", async t => {
   const { port } = listener.address();
   
   expect(port).to.be.a("number");
-  
 });
 
-// test("finds first available port", t => {
-//
-// });
+test("starts server with specified port", async t => {
+  const server = express();
+  const startPort = 3000;
+  
+  const listener = await start(server, startPort);
+  const { port } = listener.address();
+  
+  expect(port).to.be.a("number");
+  expect(port >= startPort).to.be.true;
+});
