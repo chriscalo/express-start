@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "ava": "^2.3.0",
-    "chai": "^4.2.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "microbundle": "^0.11.0",
