@@ -1,5 +1,7 @@
 # @chriscalo/start-server
 
+# DEPRECATED. See [express-start](https://www.npmjs.com/package/express-start)
+
 Simple utility for starting an [express][express.js] server with
 automatic port selection.
 
