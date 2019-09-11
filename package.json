@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "module": "index.js",
   "source": "index.js",
-  "repository": "https://github.com/chriscalo/start-server.git",
+  "repository": "https://github.com/chriscalo/express-start.git",
   "author": "Chris Calo <chris.calo@gmail.com>",
   "license": "MIT",
   "scripts": {
