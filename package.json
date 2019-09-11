@@ -1,6 +1,6 @@
 {
   "name": "express-start",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple utility for starting an express server with automatic port selection.",
   "main": "dist/index.js",
   "module": "index.js",
