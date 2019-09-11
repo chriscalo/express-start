@@ -1,4 +1,4 @@
-# @chriscalo/start-server
+# express-start
 
 Simple utility for starting an [express][express.js] server with
 automatic port selection.
@@ -6,16 +6,16 @@ automatic port selection.
 Installation:
 
 ``` sh
-npm install @chriscalo/start-server
+npm install express-start
 # or
-yarn add @chriscalo/start-server
+yarn add express-start
 ```
 
 Usage:
 
 ``` js
 const express = require("express");
-const { start } = require("@chriscalo/start-server");
+const { start } = require("express-start");
 
 const server = express();
 
