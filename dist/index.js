@@ -19,13 +19,12 @@ var start = function (server, startPort) {
 
   try {
     function _temp(PORT) {
-      return new Promise(function (resolve) {
-        var listener = server.listen(PORT, function () {
-          console.log(("App listening on port " + PORT));
-          console.log("Press Ctrl+C to quit.");
-          resolve(listener);
-        });
-      });
+      return Promise.resolve(server.listen(PORT, function () {
+        console.log("");
+        console.log(("App listening on port " + PORT));
+        console.log("Press Ctrl+C to quit.");
+        console.log("");
+      }));
     }
 
     var _process$env$PORT = process.env.PORT;
