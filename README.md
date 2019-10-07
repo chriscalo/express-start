@@ -25,7 +25,7 @@ server.get("/", (req, res) => {
 
 start(server);
 // or
-start(server, 3000);
+start(server, 8000);
 ```
 
 The logic for selecting a port is as follows:
