@@ -37,7 +37,17 @@ The logic for selecting a port is as follows:
 3. it first tries to listen on `port`, incrementing it until one is found that
    is available (`8001`, `8002`, `8003`, etc)
 
-Example output:
+Console output in development (when `process.env.NODE_ENV !== 'production'`):
+
+``` text
+App listening at http://localhost:8000/
+Press Ctrl+C to quit.
+```
+
+In development, the URL is copied to the clipboard so you can paste it into a
+browser.
+
+Console output in production (when `process.env.NODE_ENV === 'production'`):
 
 ``` text
 App listening on port 8000
