@@ -16,6 +16,7 @@
     "dev": "run-p test:watch build:watch"
   },
   "dependencies": {
+    "clipboardy": "^2.1.0",
     "portfinder": "^1.0.23"
   },
   "devDependencies": {
