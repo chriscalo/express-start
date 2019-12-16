@@ -1,7 +1,9 @@
-import portfinder from "portfinder";
+const portfinder = require("portfinder");
 
-export async function findPort(start = 8000) {
+async function findPort(start = 8000) {
   return await portfinder.getPortPromise({
     port: start,
   });
 };
+
+module.exports.findPort = findPort;

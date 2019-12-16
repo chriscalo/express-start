@@ -2,18 +2,14 @@
   "name": "express-start",
   "version": "0.1.5",
   "description": "Simple utility for starting an express server with automatic port selection.",
-  "main": "dist/index.js",
-  "module": "index.js",
+  "main": "index.js",
   "source": "index.js",
   "repository": "https://github.com/chriscalo/express-start.git",
   "author": "Chris Calo <chris.calo@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "ava --verbose",
-    "test:watch": "ava --watch --verbose",
-    "build": "microbundle --target=node --format=cjs",
-    "build:watch": "microbundle watch --target=node --format=cjs",
-    "dev": "run-p test:watch build:watch"
+    "test:watch": "ava --watch --verbose"
   },
   "dependencies": {
     "clipboardy": "^2.1.0",
@@ -23,7 +19,6 @@
     "ava": "^2.3.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
-    "microbundle": "^0.11.0",
     "npm-run-all": "^4.1.5"
   },
   "ava": {
