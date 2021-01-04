@@ -5,7 +5,7 @@ async function start(server, startPort = 8000) {
     const isDev = process.env.NODE_ENV !== "production";
     const PORT = process.env.PORT || await findPort(startPort);
     
-    const listener = await server.listen(PORT, async () => {
+    await server.listen(PORT, async function () {
       console.log("");
       
       if (isDev) {
@@ -20,7 +20,7 @@ async function start(server, startPort = 8000) {
       console.log("Press Ctrl+C to quit.");
       console.log("");
       
-      resolve(listener);
+      resolve(this);
     });
   });
 };
