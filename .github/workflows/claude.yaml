@@ -36,6 +36,6 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
 
-          # Enable full gh CLI access for Claude
+          # Enable gh CLI access for Claude
           claude_args: |
-            --allowedTools "Bash(*)"
+            --allowedTools "Bash(gh *)"
